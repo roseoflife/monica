@@ -1,12 +1,13 @@
-/* Monica's World - bright & playful theme
-   Loaded after main.css to override the old academic look. */
+/* Monica's World - neutral, playful theme
+   Loaded after main.css to override the old academic look.
+   (Variable names kept as -pink/-purple for minimal diff; values are neutral.) */
 
 :root {
-  --pink: #ff5fa2;
-  --purple: #8c52ff;
-  --light-pink: #ffd6ec;
-  --light-purple: #e8ddff;
-  --yellow: #ffd23f;
+  --pink: #c17f59;        /* terracotta */
+  --purple: #6b7f6b;      /* sage green */
+  --light-pink: #f5f0e6;  /* warm cream */
+  --light-purple: #e4e8df; /* soft sage tint */
+  --yellow: #d9a441;      /* warm mustard */
 }
 
 html, body {
@@ -64,7 +65,9 @@ h1, h2, h3, .navbar-brand, .container h1, .container h2, .container h3 {
 
 /* Avatar */
 .avatar img {
-  max-width: 220px;
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
   border: 6px solid var(--yellow);
   border-radius: 50%;
 }
