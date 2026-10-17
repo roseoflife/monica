@@ -1,0 +1,7 @@
+# Each entry is one picture in the My Art page.
+# To add more of Monica's drawings:
+#   1. Drop the image file into static/img/art/
+#   2. Add a new entry below with its file name and a caption
+
+- file: monica-drawings.jpg
+  caption: Portraits I drew of my classmates
