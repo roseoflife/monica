@@ -3,5 +3,7 @@
 #   1. Drop the PDF file into static/files/comics/
 #   2. Add a new entry below with its file name and a title
 
-# - file: my-first-comic.pdf
-#   title: My First Comic
+- file: fairy-and-the-mouse-storybook.pdf
+  title: The Adventures of the Fairy and the Mouse (Storybook)
+- file: fairy-and-the-mouse.pdf
+  title: The Adventures of the Fairy and the Mouse
