@@ -15,6 +15,7 @@ title: My Comic Books
             <div class="gallery-item">
               <i class="fa fa-book" style="font-size: 40px; color: #8c52ff;"></i>
               <div class="gallery-caption">{{ comic.title }}</div>
+              {% if comic.subtitle %}<div style="font-family:'Quicksand', sans-serif; font-size:14px; color:#6b7f6b;">{{ comic.subtitle }}</div>{% endif %}
               <a class="cta-button" style="font-size:14px; padding:8px 16px; margin-top:10px; display:inline-block;"
                  href="{{ site.baseurl }}static/files/comics/{{ comic.file }}" target="_blank">Read it</a>
             </div>

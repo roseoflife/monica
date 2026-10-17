@@ -8,6 +8,13 @@
     <meta name="description" content="{{ site.description }}">
     <link rel="shortcut icon" type="image/png" href="{{ site.baseurl }}static/img/favicon.png">
 
+    <!-- Explicit link-preview tags so apps don't auto-grab a personal photo off the page -->
+    <meta property="og:title" content="{{ page.title | default: site.title }}">
+    <meta property="og:description" content="{{ site.description }}">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="{{ site.url }}{{ site.baseurl }}static/img/favicon.png">
+    <meta name="twitter:card" content="summary">
+
     {% if page.title %}
       <title>{{ page.title }}</title>
     {% else %}
