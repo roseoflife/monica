@@ -11,29 +11,25 @@ safe: true
 
 
 # site identity
-url: https://maryami.com
+url: ""
 baseurl: ""
-title: Maryam Zakeryfar
-author: Maryam Zakeryfar
-description: Principal Software Engineer with a PhD in Computer Science and 20+ years of experience in finance tech, data tech, Spark, Databricks, Snowflake, SQL, LLMs, and data quality.
-avatar: profile.jpg
-email: maryami@gmail.com
+title: Monica's World
+author: Monica
+description: Monica's corner of the internet - art, gymnastics, and stories!
+avatar: monica-avatar.jpg
+email:
 
-
-# professional links
-github: roseoflife
-linkedin: maryami
-x: MARYAMI
-
-# optional (only keep if you actually use them)
-stackoverflow: 
-medium: https://medium.com/@maryami
+# fun facts, used around the site
+age: 9
+city: Montreal West
+favorite_animal: Dog
+favorite_hobby: Gymnastics, art, and writing stories
+favorite_food: Pasta
+languages: Farsi, English, and French
 
 # remove social noise (keep site clean)
-twitter: 
-disqus: 
-
-google_analytics: 
+disqus:
+google_analytics:
 
 # needed for builds
 exclude: [vendor]

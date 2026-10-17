@@ -1,110 +1,27 @@
 ---
 layout: layout
-title: Writing
+title: My Stories
 ---
 
 <div class="container">
-  <h3>Writing</h3>
+  <h3>My Stories</h3>
   <div class="panel panel-default">
     <div class="panel-body">
 
+      {% for post in site.posts %}
       <div class="row">
         <div class="col-sm-4 col-md-4 col-lg-4">
-          <h5 style="text-align: right">December 5, 2024</h5>
+          <h5 style="text-align: right">{{ post.date | date: "%B %e, %Y" }}</h5>
         </div>
         <div class="col-sm-8 col-md-8 col-lg-8">
           <h5 style="text-align: left">
-            <strong><a href="https://medium.com/@maryami/6-game-changing-simplicity-lessons-from-amazon-cto-at-aws-re-invent-2024-5c966f3db8e4" target="_blank">6 Game-Changing Simplicity Lessons from Amazon CTO at AWS re:Invent 2024</a></strong>
+            <strong><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></strong>
           </h5>
         </div>
       </div>
-
-      <div class="row">
-        <div class="col-sm-4 col-md-4 col-lg-4">
-          <h5 style="text-align: right">January 25, 2025</h5>
-        </div>
-        <div class="col-sm-8 col-md-8 col-lg-8">
-          <h5 style="text-align: left">
-            <strong><a href="https://medium.com/@maryami/what-is-scala-higher-order-functions-1c1f747810fe" target="_blank">Scala Higher Order Functions, What, Who, Why and How!</a></strong>
-          </h5>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-sm-4 col-md-4 col-lg-4">
-          <h5 style="text-align: right">August 20, 2023</h5>
-        </div>
-        <div class="col-sm-8 col-md-8 col-lg-8">
-          <h5 style="text-align: left">
-            <strong><a href="https://medium.com/@maryami/joining-a-new-engineering-team-dos-and-don-ts-for-female-engineers-f9ae310a8ea" target="_blank">Joining a New Engineering Team: Do's and Don'ts for Female Engineers</a></strong>
-          </h5>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-sm-4 col-md-4 col-lg-4">
-          <h5 style="text-align: right">September 15, 2023</h5>
-        </div>
-        <div class="col-sm-8 col-md-8 col-lg-8">
-          <h5 style="text-align: left">
-            <strong><a href="https://medium.com/@maryami/a-developers-guide-to-peaceful-nights-post-code-submission-testing-21cec86b7ee2" target="_blank">A Developer's Guide to Peaceful Nights Post-Code Submission: Testing!</a></strong>
-          </h5>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-sm-4 col-md-4 col-lg-4">
-          <h5 style="text-align: right">August 9, 2023</h5>
-        </div>
-        <div class="col-sm-8 col-md-8 col-lg-8">
-          <h5 style="text-align: left">
-            <strong><a href="https://medium.com/@maryami/copying-a-table-from-snowflake-to-delta-tables-in-databricks-using-scala-notebook-b27f554c31ae" target="_blank">Copying a Table from Snowflake to Delta Tables in Databricks using Scala Notebook</a></strong>
-          </h5>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-sm-4 col-md-4 col-lg-4">
-          <h5 style="text-align: right">August 4, 2023</h5>
-        </div>
-        <div class="col-sm-8 col-md-8 col-lg-8">
-          <h5 style="text-align: left">
-            <strong><a href="https://medium.com/@maryami/scalas-polyamory-with-java-and-functional-paradigms-a-love-story-in-code-9d896f94ddf4" target="_blank">Scala's Polyamory with Java and Functional Paradigms: A Love Story in Code</a></strong>
-          </h5>
-        </div>
-      </div>
-
-      <hr style="margin: 40px 0;">
-
-      <h4 style="margin-top: 30px;">Theses</h4>
-
-      <div class="row">
-        <div class="col-sm-4 col-md-4 col-lg-4">
-          <h5 style="text-align: right">2014</h5>
-        </div>
-        <div class="col-sm-8 col-md-8 col-lg-8">
-          <h5 style="text-align: left">
-            <strong><a href="https://spectrum.library.concordia.ca/id/eprint/978365/" target="_blank">Static Analysis of a Concurrent Programming Language by Abstract Interpretation</a></strong>
-          </h5>
-          <p style="font-size: 14px; color: #666; margin-top: 5px;">PhD Thesis, Concordia University</p>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-sm-4 col-md-4 col-lg-4">
-          <h5 style="text-align: right"></h5>
-        </div>
-        <div class="col-sm-8 col-md-8 col-lg-8">
-          <h5 style="text-align: left">
-            <strong><a href="https://www.researchgate.net/publication/234785551_An_online_system_for_sharing_image_data_for_cardiac_modeling" target="_blank">An Online System for Sharing Image Data for Cardiac Modeling</a></strong>
-          </h5>
-          <p style="font-size: 14px; color: #666; margin-top: 5px;">Master's Thesis, Concordia University</p>
-        </div>
-      </div>
-
-      <p style="text-align: center; margin-top: 30px; color: #999;">
-        <a href="https://medium.com/@maryami" target="_blank">View all articles on Medium</a>
-      </p>
+      {% else %}
+      <p>No stories yet - add one in the <code>_posts</code> folder!</p>
+      {% endfor %}
 
     </div>
   </div>

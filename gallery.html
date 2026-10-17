@@ -1,0 +1,18 @@
+---
+layout: layout
+title: Gallery
+---
+
+<div class="container">
+  <h3>My Gallery</h3>
+  <p style="font-family:'Quicksand', sans-serif;">Here are some of my drawings and photos! (These are just samples for now - swap them for the real ones!)</p>
+
+  <div class="gallery-grid">
+    {% for item in site.data.gallery %}
+    <div class="gallery-item">
+      <img src="{{ site.baseurl }}static/img/gallery/{{ item.file }}" alt="{{ item.caption }}">
+      <div class="gallery-caption">{{ item.caption }}</div>
+    </div>
+    {% endfor %}
+  </div>
+</div>

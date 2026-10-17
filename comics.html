@@ -1,0 +1,31 @@
+---
+layout: layout
+title: My Comic Books
+---
+
+<div class="container">
+  <h3>My Comic Books</h3>
+  <div class="panel panel-default">
+    <div class="panel-body">
+
+      {% if site.data.comics and site.data.comics.size > 0 %}
+        <div class="row" style="text-align:left;">
+        {% for comic in site.data.comics %}
+          <div class="col-sm-6 col-md-4" style="margin-bottom: 20px;">
+            <div class="gallery-item">
+              <i class="fa fa-book" style="font-size: 40px; color: #8c52ff;"></i>
+              <div class="gallery-caption">{{ comic.title }}</div>
+              <a class="cta-button" style="font-size:14px; padding:8px 16px; margin-top:10px; display:inline-block;"
+                 href="{{ site.baseurl }}static/files/comics/{{ comic.file }}" target="_blank">Read it</a>
+            </div>
+          </div>
+        {% endfor %}
+        </div>
+      {% else %}
+        <p>No comic books here yet! Drop a PDF into <code>static/files/comics/</code> and add it to
+        <code>_data/comics.yml</code> to see it show up here.</p>
+      {% endif %}
+
+    </div>
+  </div>
+</div>

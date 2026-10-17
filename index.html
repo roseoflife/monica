@@ -3,63 +3,30 @@ layout: home
 ---
 
 <section id="about">
-  <div class="container">
+  <div class="container hero">
     <div class="avatar">
       <img class="img-circle" src="{{ site.baseurl }}static/img/{{ site.avatar }}" alt="{{ site.author }}">
     </div>
 
-    <h1>{{ site.author }}</h1>
-    <h3>Principal Software Engineer</h3>
-    <h3>maryami at gmail dot com</h3>
+    <h1>Hi, I'm {{ site.author }}! &#9733;</h1>
+    <p class="subtitle">Welcome to my little corner of the internet!</p>
 
-    <div class="social">
-
-    <div class="about-link-row">
-  <div class="about-link-title">Connect</div>
-  <div class="about-link-logo">
-    <a href="https://x.com/{{ site.x }}" target="_blank" rel="noopener noreferrer">
-      <img class="link-logo-img" src="{{ site.baseurl }}static/img/x.png" alt="X">
-    </a>
-  </div>
-</div>
-      
-      <div class="about-link-row">
-        <div class="about-link-title"> CODE </div>
-        <div class="about-link-logo">
-          <a href="https://github.com/{{ site.github }}">
-            <img class="link-logo-img" src="{{ site.baseurl }}static/img/github.png" alt="GitHub">
-          </a>
-        </div>
-      </div>
-
-      <div class="about-link-row">
-        <div class="about-link-title">Writing</div>
-        <div class="about-link-logo">
-          <a href="{{ site.medium }}">
-            <i class="fa fa-medium link-logo-icon"></i>
-          </a>
-        </div>
-      </div>
-
-      <div class="about-link-row">
-        <div class="about-link-title">Work</div>
-        <div class="about-link-logo">
-          <a href="https://linkedin.com/in/{{ site.linkedin }}">
-            <img class="link-logo-img" src="{{ site.baseurl }}static/img/linkedin.png" alt="LinkedIn">
-          </a>
-        </div>
-      </div>
-
-      <div class="about-link-row">
-        <div class="about-link-title">Courses</div>
-        <div class="about-link-logo">
-          <a href="{{ site.baseurl }}courses.html">
-            <i class="fa fa-graduation-cap link-logo-icon"></i>
-          </a>
-        </div>
-      </div>
-
+    <div class="fact-chips">
+      <span class="fact-chip">&#127874; {{ site.age }} years old</span>
+      <span class="fact-chip">&#128205; {{ site.city }}</span>
+      <span class="fact-chip">&#128054; Loves {{ site.favorite_animal }}s</span>
+      <span class="fact-chip">&#127941; {{ site.favorite_hobby }}</span>
+      <span class="fact-chip">&#127829; {{ site.favorite_food }} is the best!</span>
     </div>
 
+    <p style="font-family:'Quicksand', sans-serif; font-size:18px; max-width:600px; margin:20px auto;">
+      I love doing gymnastics, drawing, and writing my own stories. Take a look around and see
+      some of my art and the stories I've written!
+    </p>
+
+    <div class="cta-row">
+      <a class="cta-button" href="{{ site.baseurl }}gallery.html">&#127912; See my Gallery</a>
+      <a class="cta-button" href="{{ site.baseurl }}blog.html">&#128214; Read my Stories</a>
+    </div>
   </div>
 </section>

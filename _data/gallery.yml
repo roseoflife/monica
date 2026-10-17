@@ -1,0 +1,13 @@
+# Each entry is one picture in the Gallery page.
+# To add more of Monica's drawings/photos:
+#   1. Drop the image file into static/img/gallery/
+#   2. Add a new entry below with its file name and a caption
+
+- file: monica-splits.jpg
+  caption: Gymnastics - doing the splits!
+- file: monica-cartwheel.jpg
+  caption: Cartwheel on the beach
+- file: monica-swim-ribbon.jpg
+  caption: 3rd place swim ribbon
+- file: monica-drawings.jpg
+  caption: Portraits I drew of my classmates

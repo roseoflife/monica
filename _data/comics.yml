@@ -1,0 +1,7 @@
+# Each entry is one comic book in the Comics page.
+# To add one of Monica's comic books:
+#   1. Drop the PDF file into static/files/comics/
+#   2. Add a new entry below with its file name and a title
+
+# - file: my-first-comic.pdf
+#   title: My First Comic
